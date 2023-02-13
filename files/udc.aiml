@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<aiml version="2.0">
+
+#
+PREGUNTAS Y RESPUESTAS
+#
+<category>
+  <pattern>HI</pattern>
+  <template>Hello world!</template>
+</category>
+
+<category>
+  <pattern>betis</pattern>
+  <template>NO</template>
+</category>
+#
+SI NO HAY RESPUESTA
+#
+<category>
+<pattern>*</pattern>
+<template>
+<random>
+<li>What was that?</li>
+<li>I don’t understand</li>
+<li>Can you say that more clearly?</li>
+</random>
+</template>
+</category>
+#
+SI LE PREGUNTAS EL NOMBRE
+#
+<category>
+<pattern>MY NAME IS *</pattern>
+<template>Hello, <star/>.</template>
+</category>
+
+#
+DECIR QUE ES LO MISMO
+#
+
+
+<category>
+<pattern>BUENOS DIAS</pattern>
+<template>BUENOS DIAS</template>
+</category>
+
+
+<category>
+<pattern>BUEN</pattern>
+<template><srai>BUENOS DIAS</srai></template>
+</category>
+
+<category>
+<pattern>BUENAS</pattern>
+<template><srai>BUENOS DIAS</srai></template>
+</category>
+
+
+<category>
+<pattern>BUENOSDIAS</pattern>
+<template><srai>BUENOS DIAS</srai></template>
+</category>
+
+</aiml>
+
